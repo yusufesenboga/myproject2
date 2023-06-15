@@ -22,6 +22,7 @@ class SimpsonAdapter : RecyclerView.Adapter<SimpsonAdapter.SimpsonViewHolder>() 
             return oldItem == newItem
         }
     }
+
     private val differ = AsyncListDiffer(this, diffCalback)
     var simpsons: List<RelatedTopic>
         get() = differ.currentList

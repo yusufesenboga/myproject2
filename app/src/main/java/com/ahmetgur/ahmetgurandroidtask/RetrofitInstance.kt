@@ -7,7 +7,7 @@ object RetrofitInstance {
 
     val api: SimpsonApi by lazy {
         Retrofit.Builder()
-            .baseUrl("http://api.duckduckgo.com/")
+            .baseUrl("https://api.duckduckgo.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(SimpsonApi::class.java)

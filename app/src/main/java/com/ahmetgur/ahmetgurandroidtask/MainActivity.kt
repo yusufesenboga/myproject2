@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             }
             if (response.isSuccessful && response.body() != null){
                 simpsonAdapter.simpsons = response.body()!!.RelatedTopics
+                binding.progressBar.isVisible = false
             }
         }
     }
